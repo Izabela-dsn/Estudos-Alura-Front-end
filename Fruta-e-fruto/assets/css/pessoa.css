@@ -1,0 +1,62 @@
+.pessoas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.pessoa {
+  display: flex;
+  flex-direction: column;
+}
+
+.pessoa-imagem {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.pessoa-imagem--roberta {
+  background-image: url(/assets/img/pessoas/roberta.jpg);
+}
+
+.pessoa-imagem--marcela {
+  background-image: url(/assets/img/pessoas/marcela.jpg);
+}
+
+.pessoa-imagem--andreia {
+  background-image: url(/assets/img/pessoas/andreia.jpg);
+}
+
+.pessoa-nome {
+  margin: 1rem 0;
+  font-family: Pacifico, cursive;
+  color: #8d0606;
+  font-size: 2rem;
+}
+
+.pessoa-funcao {
+  text-transform: lowercase;
+  color: #595959;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 0px) {
+  .pessoas {
+    flex-direction: column;
+  }
+  .pessoa {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pessoas {
+    flex-direction: row;
+  }
+  .pessoa {
+    margin-bottom: 0;
+  }
+}
